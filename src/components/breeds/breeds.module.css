@@ -1,0 +1,93 @@
+.breeds {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.breeds .text {
+  padding: 30px;
+  line-height: 3;
+}
+
+.breeds:first-of-type {
+  margin-top: 490px;
+}
+
+.breedsContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.breedsContent h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.text,
+.cards {
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+section.breeds:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+
+section.breeds:nth-child(odd) {
+  background-color: #5b56bc;
+  color: white;
+}
+
+.titleBreed {
+  color: white;
+}
+.card1 img,
+.card2 img {
+  width: 130px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: -8px 11px 33px -10px rgba(0, 0, 0, 0.55);
+  border: 5px solid white;
+}
+
+.card1 {
+  transform: rotate(-30deg);
+  z-index: 3;
+}
+
+.card2 {
+  transform: rotate(15deg);
+  z-index: 2;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800) {
+  .card1 img,
+  .card2 img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .breedsContent {
+    flex-direction: row;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .card1 img,
+  .card2 img {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,47 @@
+.textBreed {
+  color: white;
+  font-weight: 400;
+  margin: 150px 0 100px;
+  letter-spacing: 2px;
+}
+
+.textBreed h2 {
+  font-size: 30px;
+}
+
+.textBreed p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.textBreed button {
+  width: 200px;
+  padding: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: black;
+  transition: all 0.1s;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.textBreed button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 767px) {
+  .textBreed {
+    max-width: 55%;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: min-content;
+  background-color: #5b56bc;
+  padding-bottom: 70px;
+}

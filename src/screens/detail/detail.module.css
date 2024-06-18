@@ -1,0 +1,9 @@
+.menu,
+.menu::before,
+.menu::after {
+  background-color: black !important;
+}
+
+.footer {
+  margin-top: 70px;
+}

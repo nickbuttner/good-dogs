@@ -1,0 +1,20 @@
+.button {
+  width: 200px;
+  padding: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 0.1s;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.hoverscale:hover {
+  transform: scale(1.1);
+}
+
+.hovercolor:hover {
+  background-color: white !important;
+  color: #5b56bc;
+}

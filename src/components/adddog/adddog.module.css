@@ -1,0 +1,67 @@
+.adddog {
+  max-width: 600px;
+  margin: 200px auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  margin: auto;
+}
+
+.container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f55;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.form textarea {
+  height: 100px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.button button {
+  width: 200px;
+  padding: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: black;
+  transition: all 0.1s;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.button button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    width: 600px;
+  }
+}

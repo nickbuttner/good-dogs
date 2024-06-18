@@ -1,0 +1,46 @@
+@value colortheme: #5b56bc;
+
+section.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1509196110823-612562453a4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1487&q=80");
+  background-color: white;
+  width: 100%;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 75px 10px;
+  position: relative;
+  top: 0;
+}
+
+.bannerWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.bannerWrapper h1 {
+  color: white;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.bannerWrapper p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: white;
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 767px) {
+  .bannerWrapper p {
+    max-width: 40%;
+  }
+}

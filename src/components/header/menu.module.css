@@ -1,0 +1,116 @@
+@value dogWidth: 1000px;
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 6;
+  padding: 30px 0;
+  transition: all 0.3s;
+}
+
+.withWhiteBg {
+  background: white;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #5b56bc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: height 0.3s;
+  overflow: hidden;
+}
+
+.background {
+  width: dogWidth;
+  position: absolute;
+  top: 60px;
+  left: calc(100vw - dogWidth / 2);
+  opacity: 0.1;
+}
+
+.overlayContent {
+  margin-top: 100px;
+  font-size: 30px;
+
+  opacity: 0.7;
+}
+
+.animateList {
+  transition: all 0.5s;
+  padding: 8px 0;
+  opacity: 0;
+  text-transform: capitalize;
+}
+
+.animateList a {
+  text-decoration: none;
+  color: white;
+}
+
+.animateList:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.fade {
+  opacity: 1;
+  transform: translateY(30px);
+}
+
+.logo {
+  z-index: 6;
+  color: white;
+  opacity: 0.4;
+}
+
+.darkColor {
+  color: black !important;
+}
+
+.darkColor svg {
+  color: black !important;
+}
+
+.hidden {
+  height: 0;
+}
+
+.nav {
+  z-index: 6;
+  position: relative;
+  opacity: 0.4;
+}
+
+.nav button {
+  outline: none;
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  padding: 0;
+  margin: 0;
+}
+
+.lightColor,
+.lightColor::before,
+.lightColor::after {
+  background-color: white !important;
+}
+
+.darkcolor,
+.darkcolor::before,
+.darkcolor::after {
+  background-color: black !important;
+}

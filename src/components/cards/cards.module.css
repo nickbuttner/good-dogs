@@ -1,0 +1,72 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.gridContainer img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+/* hover styles */
+.dogForBreed {
+  position: relative;
+  cursor: pointer;
+}
+
+.dogImage {
+  line-height: 0;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: -8px 11px 33px -10px rgba(0, 0, 0, 0.55);
+
+  border-radius: 10px;
+}
+
+.dogImage img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  height: 390px;
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.dogName {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dogForBreed:hover .dogName {
+  opacity: 1;
+}
+
+.dogForBreed:hover .dogImage img {
+  filter: blur(2px);
+}
+
+/* for touch screen devices */
+@media (hover: none) {
+  .dogName {
+    opacity: 1;
+  }
+  .dogImage img {
+    filter: blur(2px);
+  }
+}
